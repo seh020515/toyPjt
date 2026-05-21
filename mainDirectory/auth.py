@@ -4,7 +4,7 @@ failCount = 0
 currentUser = False
 
 
-def login():
+def login(members):
 
     global failCount
     global currentUser
