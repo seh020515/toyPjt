@@ -17,9 +17,9 @@ def login():
     userId = input("아이디 입력: ")
     userPw = input("비밀번호 입력: ")
 
-    if userId in users:
+    if userId in members:
 
-        if users[userId] == userPw:
+        if members[userId] == userPw:
 
             currentUser = userId
             failCount = 0
