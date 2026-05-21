@@ -16,7 +16,8 @@ def showMenu():
 
 
 
-def login():
+def login(members):
+    main(members)
 
     global failCount
     global currentUser
