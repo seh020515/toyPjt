@@ -22,8 +22,3 @@ while True:
 user_phone = input('회원 phone 입력: ')
 user_phone = user_phone.replace('-', "")
 
-        
-
- 
-
-

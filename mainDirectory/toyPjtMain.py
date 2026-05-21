@@ -1,4 +1,6 @@
 from edit_member import inject_dummy_data, editInfo
+from sighIn import main
+
 flag = True
 
 SIGN_UP                 = 1
@@ -12,21 +14,10 @@ DEV_MOD = True
 members = {}
 if DEV_MOD:
     inject_dummy_data(members)
-
 #------------------------------
 
-
-
-#함수
-def signUp():
-    pass
-
-def signIn():
-    pass
-
-def printInfo():
-    pass
-
+def logIn():
+    main()
 
 def getMenu():
     menu = int(input('1.회원가입 2.로그인 3.회원 조회 4.회원정보 수정 99.종료 : '))
@@ -36,13 +27,13 @@ while flag:
     userSelectedMenuNum = getMenu()
     
     if userSelectedMenuNum == SIGN_UP:
-        signUp()
+        pass
     
     elif userSelectedMenuNum == SIGN_IN:
-        signIn()
+        logIn()
     
     elif userSelectedMenuNum == PRINT_INFO:
-        printInfo()
+        pass
     
     elif userSelectedMenuNum == EDIT_INFO:
         editInfo(members)
