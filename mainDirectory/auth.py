@@ -19,7 +19,7 @@ def login():
 
     if userId in members:
 
-        if members[userId] == userPw:
+        if members[userId]['pw'] == userPw:
 
             currentUser = userId
             failCount = 0
