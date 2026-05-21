@@ -1,3 +1,4 @@
+from edit_member import inject_dummy_data, editInfo
 flag = True
 
 SIGN_UP                 = 1
@@ -9,6 +10,9 @@ SYSTEM_SHUTDOWN         = 99
 #더미 데이터 넣을 공간------------
 DEV_MOD = True
 members = {}
+if DEV_MOD:
+    inject_dummy_data(members)
+
 #------------------------------
 
 
@@ -23,8 +27,6 @@ def signIn():
 def printInfo():
     pass
 
-def editInfo():
-    pass
 
 def getMenu():
     menu = int(input('1.회원가입 2.로그인 3.회원 조회 4.회원정보 수정 99.종료 : '))
@@ -43,7 +45,7 @@ while flag:
         printInfo()
     
     elif userSelectedMenuNum == EDIT_INFO:
-        editInfo()
+        editInfo(members)
     
     elif userSelectedMenuNum == SYSTEM_SHUTDOWN:
         flag = False
