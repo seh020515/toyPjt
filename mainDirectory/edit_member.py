@@ -6,12 +6,24 @@ CHANGE_PHONE    = '3'
 
 # 더미 데이터 (테스트용)
 def inject_dummy_data(members):
-    members = ({
-        'kyle01': {'pw': '1234', 'email': 'kyle@test.com', 'phone': '01012345678'},
-        'hong02': {'pw': 'abcd', 'email': 'hong@test.com', 'phone': '01098765432'},
-        'lee03':  {'pw': 'pass', 'email': 'lee@test.com',  'phone': '01055556666'},
-    })
 
+    members['kyle01'] = {
+        'pw': '1234',
+        'email': 'kyle@test.com',
+        'phone': '01012345678'
+    }
+
+    members['hong02'] = {
+        'pw': 'abcd',
+        'email': 'hong@test.com',
+        'phone': '01098765432'
+    }
+
+    members['lee03'] = {
+        'pw': 'pass',
+        'email': 'lee@test.com',
+        'phone': '01055556666'
+    }
 
 # 본인 확인 (ID + PW)
 def verify_member(members):

@@ -9,7 +9,7 @@ def show_menu():
     print("3. 종료")
 
 
-def main():
+def main(members):
 
     while True:
 

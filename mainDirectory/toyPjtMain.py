@@ -17,7 +17,7 @@ if DEV_MOD:
 #------------------------------
 
 def logIn():
-    main()
+    main(members)
 
 def getMenu():
     menu = int(input('1.회원가입 2.로그인 3.회원 조회 4.회원정보 수정 99.종료 : '))
