@@ -4,12 +4,12 @@ def signUp():
     global members
     print('\n[회원가입]')
 # ID 입력 및 중복 체크
-def user_id():
+def userid():
 
    while True:
-    user_id = input('회원 ID 입력: ')
+    userid = input('회원 ID 입력: ')
 
-    if user_id in members:
+    if userid in members:
         print("이미 사용중인 ID입니다. 다시 입력하세요.")
     else:
         break 
@@ -21,22 +21,23 @@ def SetPassword():
         Pw = input('회원 비밀번호 입력: ')   
 
 # 이메일 형식 검사
-def user_email():
+def useremail():
 
   while True:
-    user_email = input('회원 Email 입력: ')
+    useremail = input('회원 Email 입력: ')
     
-    if "@" in user_email and "." in user_email:
+    if "@" in useremail and "." in useremail:
         break
     else:
         print("올바른 이메일 형식이 아닙니다. 다시 입력하세요.")
 
 # 전화번호 '-' 자동 제거
-def user_phone():
-    return user_phone('-', "")
+def userphone():
+    userphone = input("전화번호를 입력하세요: ")
+    return userphone('-', "")
 
-user_phone = input('회원 phone 입력: ')
-user_phone = user_phone.replace('-', "")
+userphone = input('회원 phone 입력: ')
+userphone = userphone.replace('-', "")
 
 
  
